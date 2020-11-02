@@ -62,7 +62,7 @@ button a {
     width: 50%;
     height: 100vh;
     background: rgba(86,86,86, 0.3);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
     position: absolute;
     left: 0;
     top: 0;
@@ -72,7 +72,7 @@ button a {
     width: 550px;
     color: #fff;
     position: absolute;
-    /* right: 10%; */
+    right: 10%;
     top: 40%;
     left: 20%;
     transform: translateY(-50);
@@ -133,8 +133,49 @@ button a {
 }
 
 .preview .active {
-    /* display: block; */
     border: 3px solid #fff;
     width: 100px;
     opacity: 1;
+}
+
+@media(max-width:1200px) {
+    .info {
+        width: 350px;
+        left: 50px;
+    }
+}
+
+@media(max-width:870px) {
+    .info {
+        width: 300px;
+        left: 50px;
+    }
+}
+
+@media(max-width:750px) {
+    .info {
+        width: 250px;
+        left: 10px;
+    }
+    .info h1 {
+        letter-spacing: 1px;
+    }
+}
+@media(max-width:550px) {
+    .info {
+        width: 200px;
+        left: 5px;
+        box-sizing: border-box;
+        
+    }
+    .info h1 {
+        letter-spacing: 1px;
+        font-size: 50px;
+    }
+}
+
+@media(max-width:350px) {
+    .user img {
+     margin-left: 10px;
+    }
 }
